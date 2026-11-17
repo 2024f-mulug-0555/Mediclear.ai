@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Dark Radiograph Film) -->
+    <radialGradient id="filmGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="60%" stop-color="#090B0E" />
+      <stop offset="100%" stop-color="#040507" />
+    </radialGradient>
+
+    <!-- Lung Air Lucency Gradient (Darker on X-Ray = Air) -->
+    <radialGradient id="lungLucency" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#020304" />
+      <stop offset="70%" stop-color="#10141A" />
+      <stop offset="100%" stop-color="#28303C" />
+    </radialGradient>
+
+    <!-- Cardiac / Mediastinal Soft Tissue Opacity (Whiter on X-Ray = Dense) -->
+    <linearGradient id="cardiacDensity" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E2E8F0" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#CBD5E1" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#94A3B8" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Bone Density (Ribs, Clavicles, Spine) -->
+    <linearGradient id="boneDensity" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#E2E8F0" stop-opacity="0.4" />
+    </linearGradient>
+
+    <filter id="radiographBlur">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <!-- Film Base -->
+  <rect width="600" height="700" fill="url(#filmGlow)" rx="8" />
+
+  <!-- Radiography Identification Marker -->
+  <text x="30" y="45" fill="#00E5FF" font-family="monospace" font-size="14" font-weight="bold">PA CHEST ERECT [SYNTHETIC]</text>
+  <text x="30" y="65" fill="#94A3B8" font-family="monospace" font-size="11">SID: 180cm | 120kVp | 4mAs</text>
+  <text x="540" y="45" fill="#EF4444" font-family="sans-serif" font-size="18" font-weight="bold">R</text>
+
+  <!-- Spine / Mediastinum midline shadow -->
+  <rect x="288" y="80" width="24" height="520" fill="url(#boneDensity)" opacity="0.6" filter="url(#radiographBlur)" />
+
+  <!-- Thoracic Cage Outline -->
+  <!-- Clavicles -->
+  <path d="M 285 140 Q 200 125 120 150 Q 200 140 285 150" fill="url(#boneDensity)" />
+  <path d="M 315 140 Q 400 125 480 150 Q 400 140 315 150" fill="url(#boneDensity)" />
+
+  <!-- Left Lung Field (Appears on right of PA film) -->
+  <path d="M 315 170 C 340 180 430 200 450 300 C 470 400 480 480 470 540 C 440 550 380 540 350 510 C 330 460 320 380 315 280 Z" fill="url(#lungLucency)" filter="url(#radiographBlur)" />
+
+  <!-- Right Lung Field (Appears on left of PA film) -->
+  <path d="M 285 170 C 260 180 170 200 150 300 C 130 400 120 480 130 540 C 160 550 220 540 250 510 C 265 460 280 380 285 280 Z" fill="url(#lungLucency)" filter="url(#radiographBlur)" />
+
+  <!-- Rib Shadows (Bilateral arches) -->
+  <g stroke="url(#boneDensity)" stroke-width="8" stroke-linecap="round" opacity="0.45">
+    <path d="M 290 190 Q 200 210 135 250" />
+    <path d="M 310 190 Q 400 210 465 250" />
+    <path d="M 290 240 Q 190 270 125 320" />
+    <path d="M 310 240 Q 410 270 475 320" />
+    <path d="M 290 300 Q 185 340 120 400" />
+    <path d="M 310 300 Q 415 340 480 400" />
+    <path d="M 290 370 Q 180 420 125 480" />
+    <path d="M 310 370 Q 420 420 475 480" />
+    <path d="M 290 440 Q 190 490 135 540" />
+    <path d="M 310 440 Q 410 490 465 540" />
+  </g>
+
+  <!-- Cardiac Silhouette (Heart Shadow) with Mild Cardiomegaly -->
+  <path d="M 270 260 C 290 260 310 280 315 320 C 330 380 380 440 375 510 C 365 530 310 535 270 535 C 230 535 220 500 225 450 C 230 390 250 300 270 260 Z" fill="url(#cardiacDensity)" filter="url(#radiographBlur)" opacity="0.85" />
+
+  <!-- Diaphragm Arches (Hemidiaphragms) -->
+  <path d="M 115 560 Q 200 500 290 535" stroke="#FFFFFF" stroke-width="6" fill="none" opacity="0.7" filter="url(#radiographBlur)" />
+  <path d="M 485 560 Q 400 510 310 535" stroke="#FFFFFF" stroke-width="6" fill="none" opacity="0.7" filter="url(#radiographBlur)" />
+
+  <!-- Sharp Costophrenic Angles Markers -->
+  <circle cx="120" cy="555" r="4" fill="#00E5FF" opacity="0.8" />
+  <circle cx="480" cy="555" r="4" fill="#00E5FF" opacity="0.8" />
+
+  <!-- Subtle Annotations -->
+  <text x="30" y="650" fill="#64748B" font-family="sans-serif" font-size="11">OBSERVATION: Costophrenic sulci sharp. Cardiothoracic Ratio ~ 0.54 (Borderline Widening).</text>
+  <text x="30" y="670" fill="#0D9488" font-family="sans-serif" font-size="10" font-weight="bold">MediClear AI Health Literacy Educational Sample</text>
+</svg>

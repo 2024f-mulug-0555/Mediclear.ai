@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <filter id="reportShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Paper Sheet -->
+  <rect x="10" y="10" width="580" height="730" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#reportShadow)" />
+
+  <!-- Lab Header -->
+  <rect x="10" y="10" width="580" height="105" rx="10" fill="#0F766E" />
+  <text x="35" y="48" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="bold">METRO HEALTH DIAGNOSTICS &amp; CLINICAL LABS</text>
+  <text x="35" y="70" fill="#99F6E4" font-family="sans-serif" font-size="12">ISO 15189 Certified Reference Laboratory • CAP Accredited #89410</text>
+  <text x="35" y="90" fill="#CCFBF1" font-family="sans-serif" font-size="11">Automated Chemistry &amp; Hematology Analysis System</text>
+
+  <!-- Patient Demographic Bar -->
+  <rect x="25" y="125" width="550" height="60" rx="6" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="35" y="148" fill="#1E293B" font-family="sans-serif" font-size="11"><strong>PATIENT:</strong> DOE, JOHNATHAN</text>
+  <text x="230" y="148" fill="#1E293B" font-family="sans-serif" font-size="11"><strong>PID:</strong> PT-84092</text>
+  <text x="380" y="148" fill="#1E293B" font-family="sans-serif" font-size="11"><strong>DOB:</strong> 1981-04-12 (45Y / M)</text>
+  
+  <text x="35" y="172" fill="#64748B" font-family="sans-serif" font-size="11"><strong>SPECIMEN:</strong> SERUM / EDTA WHOLE BLOOD</text>
+  <text x="270" y="172" fill="#64748B" font-family="sans-serif" font-size="11"><strong>COLLECTION DATE:</strong> CURRENT 07:30 AM</text>
+  <text x="460" y="172" fill="#0D9488" font-family="sans-serif" font-size="11"><strong>STATUS:</strong> FINAL</text>
+
+  <!-- Table Header -->
+  <rect x="25" y="200" width="550" height="28" fill="#E2E8F0" />
+  <text x="35" y="218" fill="#1E293B" font-family="sans-serif" font-size="11" font-weight="bold">TEST NAME</text>
+  <text x="240" y="218" fill="#1E293B" font-family="sans-serif" font-size="11" font-weight="bold">RESULT</text>
+  <text x="320" y="218" fill="#1E293B" font-family="sans-serif" font-size="11" font-weight="bold">UNIT</text>
+  <text x="400" y="218" fill="#1E293B" font-family="sans-serif" font-size="11" font-weight="bold">REFERENCE RANGE</text>
+  <text x="520" y="218" fill="#1E293B" font-family="sans-serif" font-size="11" font-weight="bold">FLAG</text>
+
+  <!-- Lipid Panel Rows -->
+  <text x="35" y="250" fill="#0F766E" font-family="sans-serif" font-size="11" font-weight="bold">LIPID &amp; CORONARY RISK PANEL</text>
+  
+  <line x1="25" y1="260" x2="575" y2="260" stroke="#F1F5F9" />
+  <text x="35" y="278" fill="#334155" font-family="sans-serif" font-size="11">Total Cholesterol</text>
+  <text x="240" y="278" fill="#E11D48" font-family="sans-serif" font-size="11" font-weight="bold">238</text>
+  <text x="320" y="278" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="278" fill="#64748B" font-family="sans-serif" font-size="11">&lt; 200 Desirable</text>
+  <rect x="520" y="266" width="35" height="16" rx="3" fill="#FFE4E6" />
+  <text x="528" y="278" fill="#E11D48" font-family="sans-serif" font-size="10" font-weight="bold">HIGH</text>
+
+  <line x1="25" y1="290" x2="575" y2="290" stroke="#F1F5F9" />
+  <text x="35" y="308" fill="#334155" font-family="sans-serif" font-size="11">Triglycerides</text>
+  <text x="240" y="308" fill="#E11D48" font-family="sans-serif" font-size="11" font-weight="bold">210</text>
+  <text x="320" y="308" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="308" fill="#64748B" font-family="sans-serif" font-size="11">&lt; 150 Normal</text>
+  <rect x="520" y="296" width="35" height="16" rx="3" fill="#FFE4E6" />
+  <text x="528" y="308" fill="#E11D48" font-family="sans-serif" font-size="10" font-weight="bold">HIGH</text>
+
+  <line x1="25" y1="320" x2="575" y2="320" stroke="#F1F5F9" />
+  <text x="35" y="338" fill="#334155" font-family="sans-serif" font-size="11">HDL Cholesterol (Good)</text>
+  <text x="240" y="338" fill="#0D9488" font-family="sans-serif" font-size="11" font-weight="bold">44</text>
+  <text x="320" y="338" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="338" fill="#64748B" font-family="sans-serif" font-size="11">&gt; 40 Normal</text>
+  <text x="528" y="338" fill="#0D9488" font-family="sans-serif" font-size="10">OK</text>
+
+  <line x1="25" y1="350" x2="575" y2="350" stroke="#F1F5F9" />
+  <text x="35" y="368" fill="#334155" font-family="sans-serif" font-size="11">LDL Cholesterol (Bad)</text>
+  <text x="240" y="368" fill="#E11D48" font-family="sans-serif" font-size="11" font-weight="bold">154</text>
+  <text x="320" y="368" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="368" fill="#64748B" font-family="sans-serif" font-size="11">&lt; 100 Optimal</text>
+  <rect x="520" y="356" width="35" height="16" rx="3" fill="#FFE4E6" />
+  <text x="528" y="368" fill="#E11D48" font-family="sans-serif" font-size="10" font-weight="bold">HIGH</text>
+
+  <!-- Glycemic & Metabolic Panel Rows -->
+  <text x="35" y="405" fill="#0F766E" font-family="sans-serif" font-size="11" font-weight="bold">GLYCEMIC CONTROL &amp; METABOLIC</text>
+
+  <line x1="25" y1="415" x2="575" y2="415" stroke="#F1F5F9" />
+  <text x="35" y="433" fill="#334155" font-family="sans-serif" font-size="11">Fasting Blood Glucose</text>
+  <text x="240" y="433" fill="#D97706" font-family="sans-serif" font-size="11" font-weight="bold">112</text>
+  <text x="320" y="433" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="433" fill="#64748B" font-family="sans-serif" font-size="11">70 - 99 Normal</text>
+  <rect x="520" y="421" width="35" height="16" rx="3" fill="#FEF3C7" />
+  <text x="524" y="433" fill="#B45309" font-family="sans-serif" font-size="10" font-weight="bold">ALERT</text>
+
+  <line x1="25" y1="445" x2="575" y2="445" stroke="#F1F5F9" />
+  <text x="35" y="463" fill="#334155" font-family="sans-serif" font-size="11">Hemoglobin A1c (HbA1c)</text>
+  <text x="240" y="463" fill="#D97706" font-family="sans-serif" font-size="11" font-weight="bold">5.9</text>
+  <text x="320" y="463" fill="#64748B" font-family="sans-serif" font-size="11">%</text>
+  <text x="400" y="463" fill="#64748B" font-family="sans-serif" font-size="11">&lt; 5.7 Normal</text>
+  <rect x="520" y="451" width="35" height="16" rx="3" fill="#FEF3C7" />
+  <text x="524" y="463" fill="#B45309" font-family="sans-serif" font-size="10" font-weight="bold">ALERT</text>
+
+  <!-- Renal & CBC Rows -->
+  <text x="35" y="500" fill="#0F766E" font-family="sans-serif" font-size="11" font-weight="bold">HEMATOLOGY &amp; RENAL FUNCTION</text>
+
+  <line x1="25" y1="510" x2="575" y2="510" stroke="#F1F5F9" />
+  <text x="35" y="528" fill="#334155" font-family="sans-serif" font-size="11">Hemoglobin (Hb)</text>
+  <text x="240" y="528" fill="#0D9488" font-family="sans-serif" font-size="11" font-weight="bold">14.8</text>
+  <text x="320" y="528" fill="#64748B" font-family="sans-serif" font-size="11">g/dL</text>
+  <text x="400" y="528" fill="#64748B" font-family="sans-serif" font-size="11">13.5 - 17.5</text>
+  <text x="528" y="528" fill="#0D9488" font-family="sans-serif" font-size="10">OK</text>
+
+  <line x1="25" y1="540" x2="575" y2="540" stroke="#F1F5F9" />
+  <text x="35" y="558" fill="#334155" font-family="sans-serif" font-size="11">Serum Creatinine</text>
+  <text x="240" y="558" fill="#0D9488" font-family="sans-serif" font-size="11" font-weight="bold">0.92</text>
+  <text x="320" y="558" fill="#64748B" font-family="sans-serif" font-size="11">mg/dL</text>
+  <text x="400" y="558" fill="#64748B" font-family="sans-serif" font-size="11">0.70 - 1.30</text>
+  <text x="528" y="558" fill="#0D9488" font-family="sans-serif" font-size="10">OK</text>
+
+  <!-- Lab Endorsement -->
+  <line x1="25" y1="620" x2="575" y2="620" stroke="#CBD5E1" stroke-width="1.5" />
+  <text x="35" y="645" fill="#64748B" font-family="sans-serif" font-size="10">Pathologist: Dr. Robert Vance, MD, FCAP • Automated Verified Signature</text>
+  <text x="35" y="662" fill="#64748B" font-family="sans-serif" font-size="10">Results verified with calibrator batch #992-A. Please consult your physician.</text>
+  
+  <rect x="420" y="635" width="140" height="25" rx="3" fill="#0F766E" />
+  <text x="430" y="652" fill="#FFFFFF" font-family="sans-serif" font-size="10" font-weight="bold">ELECTRONICALLY SIGNED</text>
+
+  <text x="35" y="710" fill="#94A3B8" font-family="sans-serif" font-size="9">MediClear AI Health Literacy Demo Document • Synthetic Clinical Data</text>
+</svg>

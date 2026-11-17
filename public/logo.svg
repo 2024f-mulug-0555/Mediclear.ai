@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="medGrad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#medGrad)" />
+  <!-- Medical Cross with Pulse/Lens Accent -->
+  <path d="M50 24V76M24 50H76" stroke="white" stroke-width="10" stroke-linecap="round" />
+  <!-- Heartbeat line through cross -->
+  <path d="M28 50H42L47 38L53 62L58 50H72" stroke="#67E8F9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Lens circle sparkle -->
+  <circle cx="68" cy="32" r="6" fill="#FDE047" opacity="0.9" />
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <defs>
+    <filter id="paperShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Paper Sheet -->
+  <rect x="10" y="10" width="580" height="730" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#paperShadow)" />
+
+  <!-- Clinic Header -->
+  <rect x="10" y="10" width="580" height="110" rx="12" fill="#0D9488" />
+  <text x="40" y="55" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="bold">METROPOLITAN WELLNESS CLINIC</text>
+  <text x="40" y="80" fill="#CCFBF1" font-family="sans-serif" font-size="13">Department of Internal Medicine &amp; Preventive Cardiology</text>
+  <text x="40" y="100" fill="#99F6E4" font-family="sans-serif" font-size="11">Tel: (555) 019-2831 • Lic. No: MED-89410-TX</text>
+
+  <!-- Patient Details Bar -->
+  <rect x="30" y="135" width="540" height="45" rx="6" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="45" y="162" fill="#334155" font-family="sans-serif" font-size="12"><strong>Patient:</strong> Johnathan Doe (45M)</text>
+  <text x="270" y="162" fill="#334155" font-family="sans-serif" font-size="12"><strong>Date:</strong> Current</text>
+  <text x="420" y="162" fill="#334155" font-family="sans-serif" font-size="12"><strong>Dx:</strong> HTN &amp; Dyslipidemia</text>
+
+  <!-- Classic Rx Symbol -->
+  <text x="40" y="235" fill="#0D9488" font-family="serif" font-size="44" font-weight="bold" font-style="italic">Rx</text>
+
+  <!-- Medication 1 -->
+  <g transform="translate(40, 260)">
+    <text x="0" y="0" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="bold">1. Tab. Lisinopril 10 mg</text>
+    <text x="15" y="22" fill="#475569" font-family="sans-serif" font-size="12">Sig: Take 1 tablet once daily every MORNING with a glass of water.</text>
+    <text x="15" y="40" fill="#0284C7" font-family="sans-serif" font-size="11">Qty: #30 • Refills: 3 • For Blood Pressure &amp; Renal Protection</text>
+  </g>
+
+  <!-- Medication 2 -->
+  <g transform="translate(40, 340)">
+    <text x="0" y="0" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="bold">2. Tab. Metformin HCl 500 mg</text>
+    <text x="15" y="22" fill="#475569" font-family="sans-serif" font-size="12">Sig: Take 1 tablet TWICE daily WITH MEALS (Breakfast &amp; Dinner).</text>
+    <text x="15" y="40" fill="#0284C7" font-family="sans-serif" font-size="11">Qty: #60 • Refills: 2 • For Glycemic &amp; Insulin Sensitivity</text>
+  </g>
+
+  <!-- Medication 3 -->
+  <g transform="translate(40, 420)">
+    <text x="0" y="0" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="bold">3. Tab. Atorvastatin 20 mg</text>
+    <text x="15" y="22" fill="#475569" font-family="sans-serif" font-size="12">Sig: Take 1 tablet ONCE daily at BEDTIME. Avoid grapefruit juice.</text>
+    <text x="15" y="40" fill="#0284C7" font-family="sans-serif" font-size="11">Qty: #30 • Refills: 3 • For Lipid / LDL Target Reduction</text>
+  </g>
+
+  <!-- Medication 4 (Supplement) -->
+  <g transform="translate(40, 500)">
+    <text x="0" y="0" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="bold">4. CoQ10 100 mg Softgel (Adjunct)</text>
+    <text x="15" y="22" fill="#475569" font-family="sans-serif" font-size="12">Sig: Take 1 softgel daily with midday meal.</text>
+    <text x="15" y="40" fill="#0284C7" font-family="sans-serif" font-size="11">OTC Cellular Support</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="40" y1="575" x2="560" y2="575" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Special Clinical Instructions -->
+  <text x="40" y="605" fill="#334155" font-family="sans-serif" font-size="11" font-weight="bold">Physician Notes / Precautions:</text>
+  <text x="40" y="625" fill="#64748B" font-family="sans-serif" font-size="11">• Routine repeat blood panel (Creatinine, Potassium, Lipid Panel) in 8 weeks.</text>
+  <text x="40" y="643" fill="#64748B" font-family="sans-serif" font-size="11">• Log daily blood pressure readings for review at next consultation.</text>
+
+  <!-- Doctor Signature & Stamp -->
+  <g transform="translate(380, 640)">
+    <!-- Signature simulation -->
+    <path d="M 10 30 Q 30 10 50 35 T 80 15 T 120 40 T 150 20" stroke="#1E293B" stroke-width="2" fill="none" />
+    <text x="10" y="55" fill="#334155" font-family="sans-serif" font-size="11" font-weight="bold">Dr. Sarah Jenkins, MD, FACC</text>
+    <text x="10" y="68" fill="#64748B" font-family="sans-serif" font-size="9">Board Certified Internal Medicine</text>
+  </g>
+
+  <!-- Security Barcode -->
+  <rect x="40" y="685" width="220" height="25" fill="#0F172A" rx="2" />
+  <text x="50" y="702" fill="#FFFFFF" font-family="monospace" font-size="10">||||| | |||| ||||| || |||||| |</text>
+  <text x="40" y="725" fill="#94A3B8" font-family="sans-serif" font-size="9">MediClear AI Health Literacy Demo Rx • Educational Sample Only</text>
+</svg>
